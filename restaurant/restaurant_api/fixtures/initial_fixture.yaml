@@ -1,0 +1,61 @@
+- model: restaurant_api.person
+  pk: 1
+  fields:
+    firstname: Ivan
+    surname: Ivanov
+    patronymic: Ivanovich
+    date_of_birth: 1990-05-05
+    phone: +1999888999
+- model: restaurant_api.person
+  pk: 2
+  fields:
+    firstname: Vlad
+    surname: Vladov
+    patronymic: Vladovich
+    date_of_birth: 1992-02-02
+    phone: +1999888777
+- model: restaurant_api.address
+  pk: 1
+  fields:
+    country: RU
+    province: Moscow region
+    city: Tula
+    street: Lenina
+    house: 10
+    zip_code: 11111
+- model: restaurant_api.address
+  pk: 2
+  fields:
+    country: RU
+    province: Tatarstan republic
+    street: Baumana
+    house: 40
+    zip_code: 22222
+- model: restaurant_api.restaurant
+  pk: 1
+  fields:
+    name: 'Russian friend'
+    address: 1
+    phone: +1999888555
+    cuisine: 'Russian'
+    rating: 99
+- model: restaurant_api.restaurant
+  pk: 2
+  fields:
+    name: 'Tatar friend'
+    address: 1
+    phone: +1999888222
+    cuisine: 'Tatar'
+    rating: 99
+- model: restaurant_api.employee
+  pk: 1
+  fields:
+    restaurant: 1
+    person: 1
+    position: 1
+- model: restaurant_api.employee
+  pk: 1
+  fields:
+    restaurant: 1
+    person: 2
+    position: 3
